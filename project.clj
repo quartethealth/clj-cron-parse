@@ -1,4 +1,4 @@
-(defproject org.clojars.quartet/clj-cron-parse "0.1.6"
+(defproject org.clojars.quartet/clj-cron-parse "0.1.6-SNAPSHOT"
   :description "A Clojure library for using cron expressions"
   :url "https://github.com/shmish111/clj-cron-parse"
   :license {:name "Eclipse Public License"
@@ -8,9 +8,4 @@
                  [org.clojure/core.match "0.3.0-alpha4"]]
   :profiles {:dev {:dependencies [[midje "1.6.3"]]
                    :plugins [[lein-cljfmt "0.1.10"]
-                             [lein-midje "3.1.3"]]}}
-  :release-tasks [["vcs" "assert-committed"]
-                  ["change" "version"
-                   "leiningen.release/bump-version" "release"]
-                  ["vcs" "tag" "--no-sign"]
-                  ["deploy"]])
+                             [lein-midje "3.1.3"]]}})
