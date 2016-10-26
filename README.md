@@ -2,15 +2,13 @@
 
 A Clojure library for using cron expressions.
 
-Current build status: [![Build Status](https://travis-ci.org/shmish111/clj-cron-parse.png)](https://travis-ci.org/shmish111/clj-cron-parse)
-
 The library mainly consists of one function, `next-date`, which takes a cron expression and a from date and returns the
 next `org.joda.time.DateTime` to occur for that cron expression.  From this function you should be able to do anything
 you want using cron expressions.
 
 ## Usage
 
-In [Leiningen](http://github.com/technomancy/leiningen/) add the dependency [![Clojars Project](http://clojars.org/clj-cron-parse/latest-version.svg)](http://clojars.org/clj-cron-parse)
+In [Leiningen](http://github.com/technomancy/leiningen/) add the dependency [![Clojars Project](http://clojars.org/org.clojars.quartet/clj-cron-parse/latest-version.svg)](http://clojars.org/org.clojars.quartet/clj-cron-parse)
 
 ```clojure
 (require '[clj-cron-parse.core :refer [next-date]])
